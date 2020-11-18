@@ -1,5 +1,23 @@
 # Array Methods
 
+summary 
+
+filter = to return all that meet a criteria
+map = to convert to another type of array eg if I only want names in an array 
+find = find first item with a certain paramerter // needs a true or false 
+foreach is just a loop, doesn't return anything 
+some = returns true if one of them meets a criteria 
+every = like some but checks if everything is , returns bool
+reduce = to do a summation?? 
+
+
+```
+const total = items.reduce((currentTotal // first arg is the one to be incremented, item) => {
+  return item.price + currentTotal
+}, 0 // starting value)
+
+```
+includes =  items.includes(2) //returns bool
 ## .filter()
 
 `.filter()` takes an array and tests if each item passes a condition. It produces a new array with each one that passes. Any item that returns false is skipped over.
@@ -14,6 +32,11 @@ Examples of all three below:
 
 ```javascript
 let all_ages = [12, 16, 25, 22, 19, 21, 6, 30, 20];
+
+```
+
+
+```
 
 // Anonymous function
 let voting_ages = all_ages.filter(function(age){
