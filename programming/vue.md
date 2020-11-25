@@ -21,3 +21,20 @@ fragments
 composition api / optional 
 vue has better support with typescript 
 [examples](https://github.com/academind/vue-3-update/tree/vue3-update)
+
+
+## vue 3 emits
+
+have an event for sending event 
+have another for done 
+can listen to each one 
+
+@sending = "started // a function"
+define a function for a value
+
+define them in the emits components 
+
+you can validaate an event 
+
+define it in an object of emits
+
