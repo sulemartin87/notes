@@ -90,3 +90,31 @@ ChangeNotifier is a simple class included in the Flutter SDK which provides chan
 
  (You don’t need to use ChangeNotifier with provider at all, but it’s an easy class to work with.)
 ```
+## async await 
+better looking that futures 
+
+error handling is done by try catch 
+  - can catch using HTTPException // might come in handy 
+  still returns a future because it is async obviously 
+
+
+can do a loop with a stream ?? of data 
+
+async loop, do stuff asynchronously and return a value once that async task is done
+
+``` dart
+Future<int> getTotal(Stream<int> numbers) async {
+  int total = 0;
+  await for (final value in numbers){
+    total += value;
+  }
+
+  return total
+}
+```
+
+how an async for loop is done in dart
+
+# Isolates
+
+dart is single threaded
